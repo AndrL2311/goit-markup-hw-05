@@ -244,6 +244,8 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+/* Начало employment */
 .list-employment .item-employment:not(:first-child) {
   margin-left: 30px;
 }
@@ -252,8 +254,12 @@ body {
 }
 
 .list-employment {
+ 
   display: flex;
   justify-content: center;
+}
+.item-employment{
+ position: relative;
 }
 .title-employment,
 .title-team {
@@ -267,6 +273,33 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
+.title-img-employment{
+position: absolute;
+bottom: 0;
+left: 0;
+
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+
+margin: 0;
+padding-bottom: 27px;
+padding-top: 27px;
+background: rgba(47, 48, 58, 0.8);
+
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: var(--color1);
+
+}
+
+/* Конец employment */
 
 .item-team {
   background: var(--color1);
