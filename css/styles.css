@@ -687,6 +687,40 @@ color: var(--color1);
   padding-bottom: 20px;
   padding-top: 20px;
 }
+
+.box-img-portfolio{
+   position: relative;
+}
+.text-portfolio-overley{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+
+  padding: 63px 23px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--color1);
+  opacity: 0;
+}
+.link-project-direction:hover .box-img-portfolio::before,
+.link-project-direction:hover .text-portfolio-overley{
+  opacity: 1;
+}
+.box-img-portfolio::before{
+  position: absolute;
+  display: inline-block;
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);; 
+  opacity: 0;
+}
+/* Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов. */
 /* Кнопки portfolio*/
 .botton-nav-portfolio {
   cursor: pointer;
