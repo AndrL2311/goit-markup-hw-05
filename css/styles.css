@@ -50,7 +50,31 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+/* Начало модальное окно */
+.backdrop{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
 
+.backdrop.is-hidden{
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
+   width: 528px;
+   height: 581px;
+   background-color: var(--color1);
+}
+/* Конец модальное окно */
 /* header */
 /* Логотип */
 .header {
