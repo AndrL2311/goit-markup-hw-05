@@ -244,29 +244,17 @@ body {
   height: 70px;
   fill: var(--title-color);
 }
-/* .properties-item::before {
-  display: block;
-  content: ' ';
-  height: 120px;
-  outline: 1px solid red;
- 
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: red;
-  margin-bottom: 20px;
-}
 
-.properties-item:nth-child(1)::before {
-  background-image: url(../images/main/clock\ 1.svg);
-} */
+.container-propertis{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .list-properties .properties-item:not(:first-child) {
   margin-left: 20px;
 }
+
 .list-properties {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 /* Начало employment */
@@ -535,7 +523,7 @@ color: var(--color1);
 
 .container-footer {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .logo-footer {
