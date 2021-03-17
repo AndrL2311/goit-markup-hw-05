@@ -73,6 +73,9 @@ body {
    width: 528px;
    height: 581px;
    background-color: var(--color1);
+   /* border: 1px solid rgba(0, 0, 0, 0.1); */
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
 }
 /* Кнопка закрытия */
 .button-modal-close{
@@ -134,6 +137,10 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-list .link.current {
@@ -157,12 +164,20 @@ body {
   height: 16px;
   margin-right: 10px;
   fill: var(--text-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-icon-envelope {
   width: 16px;
   height: 12px;
   margin-right: 10px;
   fill: var(--text-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .kontakt-link {
   display: flex;
@@ -172,6 +187,10 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-link:hover,
@@ -420,6 +439,8 @@ color: var(--color1);
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+
+ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .item-social:not(:first-child) {
   margin-left: 10px;
@@ -433,13 +454,16 @@ color: var(--color1);
   height: 44px;
   background-color: var(--color1);
   border-radius: 50%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-social:hover,
-.link-social:focus,
+.link-social:focus{
+  background-color: var(--accent-color);
+}
 .link-social:hover .svg-social,
 .link-social:focus .svg-social {
-  background-color: var(--accent-color);
   fill: var(--color1);
 }
 /* Кнопка */
@@ -465,12 +489,14 @@ color: var(--color1);
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
 .button:focus {
   background-color: var(--botton-accent-color);
-}
+  }
 /* Начало секция Постоянные клиенты */
 .sektion-klient {
   padding-top: 94px;
@@ -514,6 +540,7 @@ color: var(--color1);
 
 .svg-icon {
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-klient {
   display: flex;
@@ -525,6 +552,7 @@ color: var(--color1);
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-klient {
@@ -617,6 +645,7 @@ color: var(--color1);
   width: 20px;
   height: 20px;
   fill: var(--color1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .item-social-footer:not(:first-child) {
   margin-left: 10px;
@@ -630,15 +659,18 @@ color: var(--color1);
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-social-footer:hover,
-.link-social-footer:focus,
+.link-social-footer:focus{
+  background-color: var(--accent-color);
+}
 .link-social-footer:hover .svg-social-footer,
 .link-social-footer:focus .svg-social-footer {
-  background-color: var(--accent-color);
-  fill: var(--color1);
+fill: var(--color1);
 }
+
 /* Конец footer */
 
 /* main portfolio.html*/
@@ -677,7 +709,7 @@ color: var(--color1);
   list-style-type: none;
   margin-left: -30px;
   margin-top: -30px;
-}
+  }
 
 .project-direction-item {
   flex-basis: calc((100% - 90px) / 3);
@@ -687,10 +719,13 @@ color: var(--color1);
   margin-left: 30px;
   margin-top: 30px;
 }
-
+.link-project-direction{
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .link-project-direction:focus,
 .link-project-direction:hover {
-  display: block;
+  
   /* border: 1px solid #eeeeee;
   box-sizing: border-box; */
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -734,6 +769,8 @@ color: var(--color1);
   letter-spacing: 0.03em;
   color: var(--color1);
   opacity: 0;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .link-project-direction:hover .box-img-portfolio::before,
 .link-project-direction:hover .text-portfolio-overley{
@@ -747,6 +784,8 @@ color: var(--color1);
   height: 100%;
   background: rgba(33, 150, 243, 0.9);; 
   opacity: 0;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов. */
 /* Кнопки portfolio*/
@@ -764,6 +803,11 @@ color: var(--color1);
 
   padding: 6px 22px;
   border: 1px solid transparent;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .botton-nav-portfolio:hover,
